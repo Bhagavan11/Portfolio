@@ -11,9 +11,19 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import Internship from './Inter';
+import  { useEffect, useState } from 'react';
 
 const Home = () => {
   const controls = useAnimation();
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+  
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const [ref, inView] = useInView({
     threshold: 0.2,
     triggerOnce: false
@@ -45,8 +55,8 @@ const Home = () => {
   const imageVariants = {
     hidden: { x: '100vw', y: '0vw', opacity: 0 },
     visible: {
-      x: -200,
-      y: '-20vw',
+      x: isMobile ? 0 : -200,
+    y: isMobile ? 0 : '-20vw',
       opacity: 1,
       transition: {
         type: "spring",
