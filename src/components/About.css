@@ -1,0 +1,192 @@
+/* Section Header Styles */
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    text-transform: lowercase;
+    color: #ffffff;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.header-line {
+    height: 1px;
+    background-color: #c770f0;
+    width: 100%;
+    opacity: 0.5;
+}
+
+/* Main Content Layout */
+.about-section {
+    padding: 80px 15%;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    background: transparent;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+/* Image and Quote Container */
+.image-quote-container {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -40px;
+    /* Pulls image up */
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 320px;
+    height: 90%;
+    border-radius: 35%;
+    object-fit: cover;
+    background: transparent;
+}
+
+.quote-box {
+    background: rgba(199, 112, 240, 0.1);
+    border-left: 3px solid #c770f0;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+    width: 100%;
+    max-width: 250px;
+}
+
+.quote-box p {
+    font-style: italic;
+    margin: 0;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.quote-box .author {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #b0b0b0;
+    margin-top: 8px;
+}
+
+/* Text Content Styles */
+.text-content {
+    flex: 1;
+    line-height: 1.6;
+    padding-top: 40px;
+    /* Aligns text with middle of image */
+}
+
+.text-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.highlight {
+    color: #c770f0;
+    font-weight: 600;
+}
+
+.intro-line {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.text-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #b0b0b0;
+}
+
+/* Interactive Elements */
+.contact-box {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    background-color: #c770f0;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 1rem;
+}
+
+.contact-box:hover {
+    background-color: #b45ce0;
+    transform: translateY(-2px);
+}
+
+.read-more {
+    background: none;
+    border: none;
+    color: #c770f0;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 5px 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    color: #b45ce0;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 10%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .image-quote-container {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .quote-box {
+        max-width: 100%;
+    }
+
+    .text-content {
+        padding-top: 0;
+    }
+
+    .text-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro-line {
+        font-size: 1rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    } }

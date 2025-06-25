@@ -1,0 +1,158 @@
+/* Section Header - Matches About section */
+.skills-section {
+    padding: 80px 15%;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    background: transparent;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    text-transform: lowercase;
+    color: #ffffff;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.header-line {
+    height: 1px;
+    background-color: #c770f0;
+    width: 100%;
+    opacity: 0.5;
+}
+
+/* Main Container */
+.skills-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Developer Image */
+.developer-image {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.developer-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tech-sphere {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center,
+            rgba(199, 112, 240, 0.3) 0%,
+            rgba(199, 112, 240, 0) 70%);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+/* Domains Container */
+.domains-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    flex: 1;
+}
+
+.domain-card {
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.domain-card h3 {
+    color: #c770f0;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background: rgba(199, 112, 240, 0.15);
+    color: #e0e0e0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(199, 112, 240, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .developer-image {
+        margin-bottom: 40px;
+    }
+
+    .domains-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 60px 10%;
+    }
+
+    .domains-container {
+        grid-template-columns: 1fr;
+    }
+
+    .developer-image img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-line {
+        margin-top: 10px;
+        width: 100%;
+    } }

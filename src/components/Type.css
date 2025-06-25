@@ -1,0 +1,33 @@
+.transparent-container {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.icon-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #c770f0;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.resume-btn:hover {
+    background-color: #b45ce0;
+    transform: translateY(-2px);
+}

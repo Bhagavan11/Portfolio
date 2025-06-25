@@ -1,0 +1,171 @@
+.internship-section {
+    padding: 80px 15%;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    background: transparent;
+    /* Changed to transparent */
+}
+
+/* Rest of your existing CSS remains exactly the same */
+.section-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.header-line {
+    height: 1px;
+    background-color: #c770f0;
+    width: 100px;
+    margin: 0 auto 15px;
+}
+
+.subheader {
+    color: #61CE70;
+    font-size: 1.2rem;
+}
+
+.internship-content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.company-logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.company-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    background: rgba(30, 30, 30, 0.5);
+    /* Semi-transparent bg for logo */
+    padding: 15px;
+}
+
+.company-logo:hover {
+    transform: scale(1.05);
+}
+
+.internship-details {
+    flex: 2;
+    background: rgba(30, 30, 30, 0.3);
+    /* Semi-transparent panel */
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(199, 112, 240, 0.1);
+}
+
+.internship-details h3 {
+    font-size: 1.8rem;
+    color: #c770f0;
+    margin-bottom: 10px;
+}
+
+.company-duration {
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.responsibilities-list {
+    list-style: none;
+    padding: 0;
+}
+
+.responsibilities-list li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: flex-start;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.responsibilities-list .icon {
+    color: #61CE70;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.skills-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.skills-category {
+    flex: 1;
+    background: rgba(30, 30, 30, 0.3);
+    /* Semi-transparent panel */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(199, 112, 240, 0.1);
+}
+
+.skills-category h4 {
+    color: #c770f0;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list span {
+    background: rgba(199, 112, 240, 0.1);
+    color: #e0e0e0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(199, 112, 240, 0.3);
+}
+.header-line {
+    height: 1px;
+    background-color: #c770f0;
+    width: 100%;
+    opacity: 0.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .internship-content {
+        flex-direction: column;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .internship-section {
+        padding: 60px 10%;
+    }
+
+    .company-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .internship-details {
+        padding: 20px;
+    }
+}
