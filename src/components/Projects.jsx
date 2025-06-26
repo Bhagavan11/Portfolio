@@ -16,7 +16,7 @@ const Projects = () => {
       description: "Developed a full-stack OTT platform with JWT authentication, personalized watch lists, and genre-based content grid using TMDB API.",
       technologies: "React.js, Node.js, Express.js, MongoDB, TMDB API, Tailwind CSS",
       github: "https://github.com/Bhagavan11/CineStream",
-      demo: "" // No demo link
+      demo: "https://cine-stream-4q9u.vercel.app" // No demo link
     },
     {
       title: "Real-Time Chat App",
