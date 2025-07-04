@@ -23,7 +23,7 @@ const Projects = () => {
       description: "Built a full-stack real-time messaging platform with Socket.IO for persistent communication and MongoDB for chat history storage.",
       technologies: "React.js, Node.js, Express.js, MongoDB, Tailwind CSS, Socket.IO",
       github: "https://github.com/Bhagavan11/RealTime-Chat-App",
-      demo: "" // No demo link
+      demo: "https://chat-app-bhagavan.vercel.app/" // No demo link
     },
     {
       title: "Campus Connect: Intelligent College Chatbot",
