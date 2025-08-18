@@ -5,6 +5,20 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: "GMRCC: Intelligent College Chatbot",
+      description: "Built an AI-powered RAG chatbot for GMRIT with a pipeline that scrapes site data (HTML PDFs), vectorizes it in ChromaDB, and delivers fast, context-aware answers via Groq AI and Gemini API, wrapped in a secure React SPA.",
+      technologies: "React.js, Node.js, Express.js, CSS, PostgreSQL, Gemini Api",
+      github: "https://github.com/Bhagavan11/GMRCC",
+      demo: "" // No demo link
+    },
+    {
+      title: "MOCK-MATE",
+      description: "Analyzes user resumes to auto-generate tailored technical and HR questions for realistic mock interviews.",
+      technologies: "React.js, Express.js, Gemini API",
+      github: "https://github.com/Bhagavan11/MOCK_MATE",
+      demo: "https://mock-mate-bhagavan.vercel.app/" // No demo link
+    },
+    {
       title: "QuickPrep – AI-Powered Interview Prep Platform",
       description: "Built a full-stack MERN application with AI-powered chatbot for contextual concept explanations and resume-driven mock interviews with personalized learning paths.",
       technologies: "React.js, Express.js, PostgreSQL, Gemini API, Judge API",
@@ -25,13 +39,7 @@ const Projects = () => {
       github: "https://github.com/Bhagavan11/RealTime-Chat-App",
       demo: "https://chat-app-bhagavan.vercel.app/" // No demo link
     },
-    {
-      title: "Campus Connect: Intelligent College Chatbot",
-      description: "AI-powered chatbot using Gemini API to automate student query resolution for academics and campus life.",
-      technologies: "React.js, Node.js, Express.js, CSS, PostgreSQL, Gemini Api",
-      github: "https://github.com/Bhagavan11/Campus-Connect",
-      demo: "" // No demo link
-    }
+    
   ];
 
   return (
