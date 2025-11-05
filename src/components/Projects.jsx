@@ -9,7 +9,7 @@ const Projects = () => {
       description: "Built an AI-powered RAG chatbot for GMRIT with a pipeline that scrapes site data (HTML PDFs), vectorizes it in ChromaDB, and delivers fast, context-aware answers via Groq AI and Gemini API, wrapped in a secure React SPA.",
       technologies: "React.js, Node.js, Express.js, CSS, PostgreSQL, Gemini Api",
       github: "https://github.com/Bhagavan11/GMRCC",
-      demo: "" // No demo link
+      demo: "https://gmrcc.vercel.app/" // No demo link
     },
     {
       title: "MOCK-MATE",
