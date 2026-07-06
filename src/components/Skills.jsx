@@ -12,7 +12,7 @@ const Skills = () => {
 {
   name: "AI / LLM Engineering",
   skills: ["Generative AI","Large Language Models (LLMs)","Prompt Engineering","LangChain","LangGraph","AI Agents","Retrieval-Augmented Generation (RAG)","Model Context Protocol (MCP)","Vector Databases","Embeddings","FastAPI","Deep Learning"]
-}
+},
     {
       name: "Programming",
       skills: ["Python", "Java", "C", "JavaScript"]
