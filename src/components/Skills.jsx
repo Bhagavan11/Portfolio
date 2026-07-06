@@ -8,14 +8,18 @@ const Skills = () => {
     {
       name: "Web Development",
       skills: ["HTML5", "CSS3", "JavaScript", "React", "Node.js", "Express"]
-    },
+    }, 
+{
+  name: "AI / LLM Engineering",
+  skills: ["Generative AI","Large Language Models (LLMs)","Prompt Engineering","LangChain","LangGraph","AI Agents","Retrieval-Augmented Generation (RAG)","Model Context Protocol (MCP)","Vector Databases","Embeddings","FastAPI","Deep Learning"]
+}
     {
       name: "Programming",
       skills: ["Python", "Java", "C", "JavaScript"]
     },
     {
       name: "Databases",
-      skills: ["MySQL", "MongoDB", "PostgreSQL", "SQL"]
+      skills: ["MySQL", "MongoDB", "PostgreSQL", "SQL","SupaBase"]
     },
     {
       name: "Tools",
