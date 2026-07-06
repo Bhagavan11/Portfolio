@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import './Type.css';
-import bhagavan from "../assests/bhagavan.pdf";
+import bhagavan from "../assests/BHAGAVAN_RESUME_.pdf";
 
 function Type() {
   const [showContent, setShowContent] = useState(false);
